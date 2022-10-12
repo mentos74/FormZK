@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?link rel="stylesheet" type="text/css" href="ShowListPerusahaan.css"?>
+<!-- protect page by the authcontroller  -->
+<!--<?init class="AuthController" name="ShowListPerusahaan"?>-->
+<!--<label value="You are using ZK version: ${desktop.webApp.version}"/>-->
+<zk xmlns="http://www.zkoss.org/2005/zul">
+     
+    <window id ="windowPerusahaan" apply="Controller.ShowPerusahaanController" height ="100%" contentStyle="overflow:auto" >
+<!--        <label value="You are using ZK version: ${desktop.webApp.version}"/>
+         <toolbar align="end">
+              <button id ="buttonLogout" label ="Logout"/>
+         </toolbar>
+        
+        <vbox>      
+          <label value="CRUD FORM" style="font-weight: bold;" />
+             <hbox self="@define(content)" vflex="2" hflex="2" align="center"
+          pack="center" spacing="20px" style="background : white;">
+                    <listbox  height="100%" width="100%" id="listboxPerusahaan"> 
+                        <listhead>
+                            <listheader align="center" label="id_perusahaan" width="5%"/>
+                            <listheader align="center" label="nama_perusahaan"/>
+                            <listheader align="center" label="alamat_perusahaan"/>
+                            <listheader align="center" label="no_telpon"/>
+                            <listheader align="center" label="bidang_perusahaan"/>
+                        </listhead>  
+                    </listbox>
+            </hbox>
+            <div align="center">
+            <toolbar>
+                <button id ="buttonAdd" label ="Add"  />
+                <button id ="buttonUpdate" label ="Update"/>
+                <button id ="buttonDelete" label ="Delete"/>
+                
+            </toolbar>
+            </div>
+            
+            
+        </vbox>       
+        
+        -->
+       <div width="1000px">
+		<textbox id="keywordBox" forward="onOK=onQuery, onChange=onQuery" />
+		<button id="buttonSearch"  label="Search by"  />
+                </div>
+                <combobox id="comboInput"  fulfill="onOpen" width="317px" >
+    
+                    <comboitem id="combobox0" value="all" label="All"/>
+                    <comboitem id="combobox1" value="id_perusahaan"  label="id Perusahaan"/>
+                    <comboitem id="combobox2" value="nama_perusahaan"  label="Nama Perusahaan"/>
+                    <comboitem id="combobox3" value="alamat_perusahaan" label="Alamat Perusahaan"/>
+                    <comboitem id="combobox4" value="no_telpon" label="No. Telpon"/>
+                    <comboitem id="combobox5" value="bidang_perusahaan" label="Bidang Perusahaan"/>
+                   
+                   
+                </combobox>
+                
+        <style>.z-listheader {border:0px solid red !important;}
+        .z-listbox {border:0px solid red !important;}   </style>
+        <toolbar align="end">
+            <button id ="buttonListCustomer" label ="List Customer"/>
+            <button id ="buttonLogout" label ="Logout"/>
+        </toolbar>
+        
+     
+       
+        <label value="LIST PERUSAHAAN" style="font-family: Georgia;
+    font-size: 25px;"/>
+        <groupbox height="600px" >
+            <vbox>      
+              
+                <hbox self="@define(content)" vflex="2" hflex="2" align="center"
+                      pack="center" spacing="20px" style="background : white;">
+                   
+                    <listbox  height="100%"  id="listboxPerusahaan" mold="paging" pageSize="9" > 
+                       <listhead>
+                            <listheader align="center" label="Id PT" width="5%"/>
+                            <listheader align="center" label="Nama Perusahaan"/>
+                            <listheader align="center" label="Alamat Perusahaan"/>
+                            <listheader align="center" label="No Telpon"/>
+                            <listheader align="center" label="Bidang Perusahaan"/>
+                        </listhead> 
+                    </listbox>
+                </hbox>
+                <!--<div align="center">-->
+                <toolbar>
+                    <button id ="buttonAdd" label ="Add"  />
+                    <button id ="buttonUpdate" label ="Update"/>
+                    <button id ="buttonDelete" label ="Delete"/>
+                </toolbar>
+                <!--</div>-->
+            </vbox>       
+        </groupbox>
+        
+        
+    </window>
+</zk>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="inputCustomer" width="800px" border ="normal" apply="Controller.EditCustomerController">
+        <grid> 
+            <rows>
+                <row>
+                <label value ="ID : "/>
+                <intbox id="txt_id"/>
+            </row>
+            <row>
+                <label value ="Nama Depan: "/>
+                <textbox id="txt_nmd"/>
+            </row>
+            <row>
+                <label value ="Nama Belakang: "/>
+                <textbox id="txt_nmb"/>
+            </row>
+            <row>
+                <label value ="Email: "/>
+                <textbox id="txt_email"/>
+            </row>
+            <row>
+                <label value ="Alamat: "/>
+                <textbox id="txt_alamat"/>
+            </row>
+            <row>
+                <label value ="No. Telpon "/>
+                <textbox id="txt_noTelp"/>
+            </row>
+            <row>
+                <label value ="Tanggal Lahir: "/>
+                <datebox constraint="no future" id="txt_tanggalLahir" placeholder="yyyy-mm-dd" />
+            </row>
+            <row>  
+                    <label value ="Nama Perusahaan: "/>
+                    <combobox fulfill="onOpen" id="comboboxNamaPerusahaan" >
+                        <!--	    <listbox  height="100%" width="100%" id="listboxNamaPerusahaan"> 
+                            <listhead>
+                                <listheader align="center"/>
+                             
+                            </listhead>  
+                        </listbox>-->
+                    </combobox>
+                </row> 
+            
+            <row>    
+            <hbox>
+                <button id="buttonUpdate" sclass = "btn-sm btn btn-success z-icon-file" width="80px" label="Update"/>
+                <button id="buttonClose" sclass = "btn-sm btn btn-success z-icon-file" width="80px" label="Close"/>
+                
+            </hbox>
+            </row>
+            </rows>
+        </grid>
+    </window>
+</zk>

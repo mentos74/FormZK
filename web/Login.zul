@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?link rel="stylesheet" type="text/css" href="Login.css"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+ <hbox self="@define(content)" vflex="1" hflex="1" align="center"
+          pack="center" spacing="20px" >
+        <vlayout>
+            <window id="win"
+                    apply="LoginController"
+                    border="2" hflex="min" >
+                <groupbox id="value" mold="3d" closable="false">
+                    <div >
+                <listbox width="215px">
+                     <listhead>
+                    <listheader align="center" label="Silahkan Login!"  />
+                     </listhead>
+                     </listbox>
+                    
+                    <!--<label width="2000px" value="Silahkan Login !" />-->
+                    <!--<caption label="Silahkan login!" />-->	
+                    </div>
+                    <!--<caption width="200px" label="Silahkan Login !" align="center" />-->			
+                    <vbox hflex="min" align="center" >
+                        <label id="message" />
+                        <div class="input-group" width="210px" >
+                            <textbox id="username" focus="true" placeholder="username"  />
+                        </div>
+                        <div class="input-group" width="210px">
+                            <textbox id="password" placeholder="password" type="password"  />
+                        </div>
+                        <div> 
+                            <button id="login" label="Enter" />
+                        </div>
+                        
+                    </vbox>
+                   
+<!--                    <div style="text-align:center; background-color: #d1d1d1;" >
+                         <label value="Testing" />
+                    </div>-->
+                </groupbox>
+                
+            </window>
+        </vlayout>
+    </hbox>
+</zk>

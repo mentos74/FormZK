@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?link rel="stylesheet" type="text/css" href="ShowListCustomer.css"?>
+<!-- protect page by the authcontroller  -->
+<?init class="AuthController" name="ShowListCustomer"?>
+ 
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    
+     
+    <window title="ZK Version : ${desktop.webApp.version} - build ${desktop.webApp.build}" id ="windowCustomer" apply="Controller.ShowCustomerController" height ="100%" contentStyle="overflow:auto"  >
+        <!--        <grid style="background-color: red;">-->
+      
+     
+
+        <style>.z-listheader {border:0px solid red !important;}
+        .z-listbox {border:0px solid red !important;}   </style>
+       
+        
+        <toolbar align="end">
+            
+            <button id ="buttonListPerusahaan" label ="List Perusahaan"/>
+            <button id ="buttonLogout" label ="Logout"/>
+            <!--<button id ="comboFormPerusahaan" label ="comboFormPerusahaan"/>-->
+        </toolbar>
+<!--         <radiogroup style="margin-left: 53px;" width="100%"  id="radioInput" onCheck="choice1.value = self.selectedItem.label" />
+            <div>
+                <radio id="radioAll" label="All" value="*"  radiogroup="radioInput"/>
+                <radio id="radioId" label="ID" value="id"  radiogroup="radioInput"/>
+                <radio id="radioNamaDepan" label="Nama Depan" value="namaDepan" radiogroup="radioInput" />
+                <radio id="radioNamaBelakang" label="Nama Belakang" value="namaBelakang" radiogroup="radioInput" />
+                <radio id="radioEmail" label="Email" value="email" radiogroup="radioInput" />
+                <radio id="radioAlamat" label="Alamat" value="alamat" radiogroup="radioInput" />
+                <radio id="radioNoTelp" label="No. Telpon" value="noTelpon" radiogroup="radioInput" />
+                <radio id="radioTglLahir" label="Tanggal Lahir" value="tanggalLahir" radiogroup="radioInput" />    
+            </div>-->
+            <div width="1000px">
+		<textbox id="keywordBox" forward="onOK=onQuery, onChange=onQuery" />
+		<button id="buttonSearch"  label="Search by"  />
+                </div>
+        <!--<row spans="5">Which support would you like ZK to improve upon?</row>-->
+        
+<!--            <div width="1000px">
+		<textbox id="keywordBox" />
+		<button id="searchButton" label="Search by" image="/img/search.png" />
+                <toolbar >
+-->                <combobox id="comboInput"  fulfill="onOpen" width="321px" >
+    
+                    <!--<comboitem id="combobox0" value="all" label="All"/>-->
+                    <comboitem id="combobox1" value="id"  label="ID"/>
+                    <comboitem id="combobox2" value="namaDepan"  label="Nama Depan"/>
+                    <comboitem id="combobox3" value="namaBelakang" label="Nama Belakang"/>
+                    <comboitem id="combobox4" value="email" label="Email"/>
+                    <comboitem id="combobox5" value="alamat" label="Alamat"/>
+                    <comboitem id="combobox6" value="noTelpon" label="No. Telpon"/>
+                    <comboitem id="combobox7" value="tanggalLahir" label="Tanggal Lahir"/>
+                    <comboitem id="combobox8" value="nama_perusahaan" label="Nama Perusahaan"/>
+                   
+                </combobox> <!--
+            </toolbar>
+	</div>-->
+        
+<!--        <div>
+           
+        </div>-->
+        <!--        <div align="center" width="100%">
+        <image src="/estim.png" align="center"/>
+        </div>-->
+                <vbox>
+        <label value="LIST CUSTOMER" style="font-family: Georgia;
+    font-size: 25px;"/>
+        </vbox>
+        <groupbox height="600px" >
+            <vbox>      
+                <!--          <label value="CRUD FORM" style="font-weight: bold;" />-->
+                <hbox self="@define(content)" vflex="2" hflex="2" align="center"
+                      pack="center" spacing="20px" style="background : white;">
+                    <!--<listbox  height="500px" width="100%" id="listboxCustomer" style="overflow:auto">--> 
+                    <listbox  height="100%"  id="listboxCustomer" mold="paging" pageSize="9" emptyMessage="Data yang kamu cari tidak ditemukan"> 
+                        <listhead>  
+                            <listheader align="center" label="ID" width="5%" sort="auto(id)"/>
+                            <listheader align="center" label="Nama Depan" sort="auto(namaDepan)"/>
+                            <listheader align="center" label="Nama Belakang" sort="auto(namaBelakang)"/>
+                            <listheader align="center" label="Email" sort="auto(email)"/>
+                            <listheader align="center" label="Alamat" sort="auto(alamat)"/>
+                            <listheader align="center" label="No. Telpon" sort="auto(noTelpon)"/>
+                            <listheader align="center" label="Tanggal Lahir" sort="auto(tanggalLahir)"/>
+                            <listheader align="center" label="Nama Perusahaan" sort="auto(id_perusahaan)"/>
+                        </listhead>  
+                    </listbox>
+                </hbox>
+                <!--<div align="center">-->
+                <toolbar>
+                    <button id ="buttonAdd" label ="Add"/>
+                    <button id ="buttonUpdate" label ="Update"/>
+                    <button id ="buttonDelete" label ="Delete"/>
+                </toolbar>
+                <!--</div>-->
+            </vbox>       
+        </groupbox>
+      
+        <!--</grid>-->  
+    </window>
+    
+</zk>

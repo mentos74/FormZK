@@ -1,0 +1,89 @@
+
+
+
+
+.z-window {
+    font-family: Georgia;
+    background: white;
+}
+
+
+.z-zk{
+    font-family: arial;
+    
+}
+.z-listheader {
+    border-left: none;
+    border-bottom: none;
+    padding: 0;
+    background: #0093F9;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+
+.z-listheader {
+   
+/*    border:1px solid red !important;*/
+    border:none;
+}
+    
+.z-listheader-content {
+    font-family: Georgia ;
+    font-size: 16px;
+    border:none;
+    color: #FFFFFF;
+    background-color: #ccffd9;
+    color: black;
+}
+
+.z-button {
+    font-family: Georgia ;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    color: #FFFFFF;
+    background-color: #ccffd9;
+    color: black;
+}
+
+.z-paging-content {
+    font-family: Georgia ;
+    height: 44px;
+    padding: 4px 16px 3px;
+    background: #ccffd9;
+    position: relative;
+}
+.z-paging {
+    height: 44px;
+    padding: 4px 16px 3px;
+    background: #ccffd9;
+    position: relative;
+}
+.z-listheader {
+    border-left: none;
+    border-bottom: none;
+    padding: 0;
+    background: #0093F9;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.z-groupbox-content {
+    border:none;
+    font-family: Georgia ;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    color: rgba(0,0,0,0.9);
+    background: #ccffd9;
+    display: block;
+    height: inherit;
+   
+    border-top: 0;
+    padding: 8px 16px 16px;
+    overflow: hidden;
+    zoom: 1;
+}

@@ -1,0 +1,61 @@
+.z-window {
+    font-family: Lucida Handwriting;
+    background: white;
+}
+
+.z-zk-content{
+    font-family: Lucida Handwriting;
+    
+}
+
+
+
+
+.z-listheader {
+   
+    border:1px solid red !important;
+    
+}
+    
+.z-listheader-content {
+    font-family: Lucida Handwriting ;
+    font-size: 16px;
+    border:none;
+    color: #FFFFFF;
+    background-color: #ccffd9;
+    color: black;
+}
+
+.z-button {
+    font-family: Lucida Handwriting ;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    color: #FFFFFF;
+    background-color: #ccffd9;
+    color: black;
+}
+
+.z-paging {
+    font-family: Lucida Handwriting ;
+    height: 44px;
+    padding: 4px 16px 3px;
+    background: #ccffd9;
+    position: relative;
+}
+.z-groupbox-content {
+    border:none;
+    font-family: Lucida Handwriting ;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    color: rgba(0,0,0,0.9);
+    background: #ccffd9;
+    display: block;
+    height: inherit;
+    border: 1px solid #D9D9D9;
+    border-top: 0;
+    padding: 8px 16px 16px;
+    overflow: hidden;
+    zoom: 1;
+}

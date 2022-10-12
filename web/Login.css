@@ -1,0 +1,58 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 6, 2022, 2:10:49 PM
+    Author     : helloWorld2
+*/
+
+
+
+.z-listheader-content {
+    color: black;
+     border-left: 0px;
+    border-bottom: 0px;
+      border-right: 0px;
+    border-top: 0px;
+    padding: 2;
+    background: #ccffd9;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    
+}
+
+.z-listheader {
+    border-left: 0px;
+    border-bottom: 0px;
+      border-right: 0px;
+    border-top: 0px;
+    padding: 0;
+    background: #0093F9;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.z-button-content {
+   border:none;
+   background: #ccffd9;
+}
+
+.z-groupbox-notitle .z-groupbox-content {
+   border-left: 0px;
+    border-bottom: 0px;
+      border-right: 0px;
+    border-top: 0px;
+}
+
+.z-button {
+    color: black;
+    border-left: 0px;
+    border-bottom: 0px;
+    padding: 2;
+    background: #ccffd9;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}

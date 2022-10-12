@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="inputPerusahaan" width="800px" border ="normal" apply="Controller.EditPerusahaanController">
+        <grid> 
+            <rows>
+                <row>
+                <label value ="id_perusahaan "/>
+                <intbox id="txt_idperusahaan"/>
+            </row>
+                
+                <row>
+                <label value ="nama_perusahaan: "/>
+                <textbox id="txt_nmp"/>
+            </row>
+            <row>
+                <label value ="alamat_perusahaan: "/>
+                <textbox id="txt_alamat"/>
+            </row>
+            <row>
+                <label value ="no_telpon: "/>
+                <textbox id="txt_notelpon"/>
+            </row>
+            <row>
+                <label value ="bidang_perusahaan "/>
+                <textbox id="txt_bdg"/>
+            </row>
+            <row>
+            <hbox>
+                <button id="buttonUpdate" sclass = "btn-sm btn btn-success z-icon-file" width="80px" label="Update"/>
+                <button id="buttonClose" sclass = "btn-sm btn btn-success z-icon-file" width="80px" label="Close"/>
+                
+            </hbox>
+            </row>
+            </rows>
+        </grid>
+    </window>
+</zk>
